@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'home_page.dart';
+
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -44,6 +46,8 @@ class _LoginPageState extends State<LoginPage> {
                   onPressed: () {
                     if (email == 'junior@flutter.com.br' && password == '123') {
                       print('correto');
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => HomePage()));
                     } else {
                       print('errado');
                     }
