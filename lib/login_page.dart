@@ -46,8 +46,7 @@ class _LoginPageState extends State<LoginPage> {
                   onPressed: () {
                     if (email == 'junior@flutter.com.br' && password == '123') {
                       print('correto');
-                      Navigator.of(context).pushReplacement(
-                          MaterialPageRoute(builder: (context) => HomePage()));
+                      Navigator.of(context).pushReplacementNamed('/home');
                     } else {
                       print('errado');
                     }
