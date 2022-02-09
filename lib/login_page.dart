@@ -27,11 +27,9 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  width: 100,
-                  height: 100,
-                  child: Image.network(
-                      "https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png"),
-                ),
+                    width: 100,
+                    height: 100,
+                    child: Image.asset('assets/images/logo.png')),
                 Container(
                   height: 20,
                 ),
