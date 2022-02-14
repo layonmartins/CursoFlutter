@@ -58,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
                           textColor: Colors.white,
                           color: Colors.red,
                           onPressed: () {
-                            if (email == 'junior@flutter.com.br' &&
+                            if (email == 'jacob@flutterando.com.br' &&
                                 password == '123') {
                               print('correto');
                               Navigator.of(context)
