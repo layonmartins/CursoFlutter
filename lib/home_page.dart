@@ -18,8 +18,11 @@ class HomePageState extends State<HomePage> {
           child: Column(
         children: [
           UserAccountsDrawerHeader(
-              currentAccountPicture: Image.network(
-                  'https://avatars.githubusercontent.com/u/30047064?v=4'),
+              currentAccountPicture: ClipRRect(
+                borderRadius: BorderRadius.circular(40),
+                child: Image.network(
+                    'https://avatars.githubusercontent.com/u/30047064?v=4'),
+              ),
               accountName: Text('Jacob Moura'),
               accountEmail: Text('jacob@flutterando.com.br')),
           ListTile(
